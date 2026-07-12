@@ -4,6 +4,7 @@ import type { Dataset, ViewId } from './types';
 import { loadDataset } from './data';
 import { Store } from './store';
 import { initGlossary } from './glossary';
+import { initTooltip } from './tooltip';
 import { openAbout } from './about';
 import { fillDetail } from './detail';
 import { formatPct, formatNumber, formatQuarter, formatSigned, relativeTime, debounce } from './format';
@@ -216,6 +217,7 @@ function renderApp(data: Dataset) {
   });
 
   initGlossary(document.body);
+  initTooltip();
   showView(store.filters.view);
   if (store.filters.selectedCode) ctx.openDetail(store.filters.selectedCode);
 }

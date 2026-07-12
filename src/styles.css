@@ -200,6 +200,16 @@ button { font-family: inherit; cursor: pointer; }
 .glossary-tooltip strong { display: block; margin-bottom: 3px; color: #7fd6ff; }
 .glossary-tooltip span { color: #e4edf5; }
 
+/* Global [data-tip] hover tooltip (see src/tooltip.ts) */
+.hover-tip {
+  position: fixed; z-index: 10000; pointer-events: none;
+  background: var(--accent-deep); color: #fff;
+  padding: 0.4rem 0.6rem; border-radius: 4px;
+  font-size: 12px; max-width: 280px; box-shadow: var(--shadow-lg);
+  opacity: 0; transition: opacity 100ms ease;
+}
+.hover-tip.visible { opacity: 1; }
+
 /* ── Legend ── */
 .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 12px; }
 .legend-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); background: none; border: none; padding: 2px 4px; border-radius: 5px; }

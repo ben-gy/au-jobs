@@ -180,7 +180,7 @@ export function barChartH(items: BarItem[], opts: { unit?: string; height?: numb
     row.className = 'hbar-row' + (it.onClick ? ' clickable' : '');
     const pct = (it.value / max) * 100;
     row.innerHTML = `
-      <div class="hbar-label" title="${it.label}">${it.label}${it.sublabel ? `<span class="hbar-sub">${it.sublabel}</span>` : ''}</div>
+      <div class="hbar-label" aria-label="${it.label}" data-tip="${it.label}">${it.label}${it.sublabel ? `<span class="hbar-sub">${it.sublabel}</span>` : ''}</div>
       <div class="hbar-track"><div class="hbar-fill" style="width:${pct.toFixed(1)}%;background:${it.color}"></div></div>
       <div class="hbar-value">${it.value.toLocaleString('en-AU', { maximumFractionDigits: 1 })}${unit}</div>`;
     if (it.tooltip) {
