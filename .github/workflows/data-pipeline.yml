@@ -3,7 +3,7 @@ name: Data Pipeline
 on:
   schedule:
     # Quarterly-ish: run on the 2nd of each month at 03:17 UTC (SALM releases ~quarterly)
-    - cron: '17 3 2 * *'
+    - cron: '17 3 2 1,4,7,10 *'
   workflow_dispatch:
   push:
     branches: [main]
