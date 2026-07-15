@@ -88,7 +88,7 @@ function renderApp(data: Dataset) {
     <footer class="site-footer">
       <div class="foot-inner">
         <div>Data: <a href="${meta.source.salmUrl}" target="_blank" rel="noopener">Small Area Labour Markets</a>, Jobs and Skills Australia · boundaries © ABS. Updated ${relativeTime(meta.generatedAt)}.</div>
-        <div>Built by <a href="https://benrichardson.dev/" target="_blank" rel="noopener">benrichardson.dev</a> · <a href="https://sites.benrichardson.dev" target="_blank" rel="noopener">more tools &amp; sites</a></div>
+        <div>Built by <a href="https://benrichardson.dev/" target="_blank" rel="noopener">benrichardson.dev</a> · <a href="https://hub.benrichardson.dev" target="_blank" rel="noopener">more tools &amp; sites</a></div>
       </div>
     </footer>
 
