@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // Collect raw source data for Regional Unemployment (AU).
 // - SALM Smoothed LGA datafile (CSV) from Jobs & Skills Australia / DEWR.
 //   The download URL is quarter-specific, so we scrape the resource page for

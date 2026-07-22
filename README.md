@@ -70,6 +70,17 @@ npm run preview
 
 A GitHub Actions pipeline (`pipeline/collect.mjs` + `pipeline/aggregate.mjs`) runs on a schedule: it scrapes the current SALM LGA CSV link from the DEWR resource page, downloads the CSV and a simplified LGA boundary GeoJSON from the ABS ArcGIS service, then parses and aggregates everything into three static files — `lgas.json`, `meta.json`, and `lga.geojson` — committed to `public/data/`. The frontend loads those at runtime; all analysis (rankings, insights, distribution) happens client-side from pure, unit-tested functions. There is no server.
 
-## License
+## license
 
-MIT
+[GNU Affero General Public License v3.0 or later](./LICENSE), with an attribution
+requirement added under section 7(b) — see
+[ADDITIONAL-TERMS.md](./ADDITIONAL-TERMS.md).
+
+In short: you may run, modify, redistribute and even sell this, but if you
+distribute it — or run a modified version where other people can reach it — you
+have to publish your source under the same licence and keep the attribution. A
+separate commercial licence without those obligations is available on request:
+<hi@ben.gy>.
+
+Third-party components keep their own licences — see
+[THIRD-PARTY-NOTICES.md](./THIRD-PARTY-NOTICES.md).

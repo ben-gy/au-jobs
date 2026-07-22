@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // Hand-rolled SVG chart builders. Each returns an SVG element (or markup string
 // for the tiny inline sparkline) and wires its own hover tooltip where useful.
 
